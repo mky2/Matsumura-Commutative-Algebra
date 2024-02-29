@@ -1,0 +1,1 @@
+tectonic -o output main.tex
