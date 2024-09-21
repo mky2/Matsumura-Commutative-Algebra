@@ -207,10 +207,18 @@
 
 %%%hyperref and Friends go at the end
 \usepackage{xcolor}
+\usepackage{hyperref}
 \definecolor{mygreen}{HTML}{138952}
 \definecolor{mypurple}{HTML}{521389}
 \definecolor{myorange}{HTML}{895213}
-\usepackage[bookmarks=true, colorlinks=true, linkcolor=mygreen, citecolor=mypurple, hypertexnames=false]{hyperref}
+\hypersetup{
+bookmarks=true,
+colorlinks=true,
+linkcolor=mygreen,
+citecolor=mypurple,
+urlcolor=myorange,
+hypertexnames=false
+}
 \usepackage[all]{hypcap}
 \newcommand{\parref}[1]{\hyperref[#1]{#1}} %to ref paragraphs.
 
