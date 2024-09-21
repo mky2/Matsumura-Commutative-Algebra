@@ -11,7 +11,7 @@
 \usepackage[shortlabels]{enumitem}
 \usepackage{indentfirst}
 \usepackage{mathrsfs}
-\usepackage[style=alphabetic-verb]{biblatex}
+\usepackage[backend=bibtex, style=alphabetic-verb]{biblatex}
 \addbibresource{references.bib}
 \usepackage{tikz-cd,tikz}
     \usetikzlibrary{hobby, calc, intersections, decorations.markings, decorations.pathreplacing} %libraries
@@ -45,13 +45,13 @@
 
 
 
-\newtheoremstyle{definitionpar}%             % Name
+\newtheoremstyle{definitionpar}%          % Name
   {}%                                     % Space above
   {}%                                     % Space below
   {}%                                     % Body font
   {}%                                     % Indent amount
   {\bf}%                                  % Theorem head font
-  {. }%                                     % Punctuation after theorem head
+  {. }%                                   % Punctuation after theorem head
   { }%                                    % Space after theorem head, ' ', or \newline
   {{\bf \refstepcounter{parcounter}\theparcounter\label{\thesection.\Alph{parcounter}}\quad\thmname{#1}\thmnumber{  #2}\thmnote{ {\normalfont (#3)}}}}
 \theoremstyle{definitionpar}
@@ -206,7 +206,11 @@
 
 
 %%%hyperref and Friends go at the end
-\usepackage[bookmarks=true, colorlinks=true, linkcolor=blue, citecolor= red,hypertexnames=false]{hyperref}
+\usepackage{xcolor}
+\definecolor{mygreen}{HTML}{138952}
+\definecolor{mypurple}{HTML}{521389}
+\definecolor{myorange}{HTML}{895213}
+\usepackage[bookmarks=true, colorlinks=true, linkcolor=mygreen, citecolor=mypurple, hypertexnames=false]{hyperref}
 \usepackage[all]{hypcap}
 \newcommand{\parref}[1]{\hyperref[#1]{#1}} %to ref paragraphs.
 

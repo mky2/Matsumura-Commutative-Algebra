@@ -1,4 +1,4 @@
-output/*
+/build
 
 .DS_Store
 .AppleDouble

@@ -1,15 +1,4 @@
-\documentclass[twoside]{book}
-\usepackage[utf8]{inputenc}
-\usepackage{makeidx}
-\usepackage[totoc]{idxlayout} % package for including index page in the table of content
-\makeindex
-\usepackage{tocbibind}%include toc in toc
-\input{preamble}
-\input{operators[preamble]}
-\usepackage{xurl}
 
-%\input{dyslexic-font} %for dyslexic version, comment out if not using that.
-\begin{document}
 
 \subfile{cover/frontcover}
 \subfile{cover/seriespage}
@@ -36,7 +25,7 @@
 \renewcommand*{\bibfont}{\small}
 \printbibliography[
 heading=bibintoc,
-title={bibliography}
+title={Bibliography}
 ]
 \setstretch{1}
 {\footnotesize
@@ -44,4 +33,3 @@ title={bibliography}
 }
 \setstretch{1.5}
 \subfile{cover/backcover}
-\end{document}
